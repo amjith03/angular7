@@ -1,0 +1,18 @@
+<div>
+  <h2>Insert course</h2>
+  <div>
+    <label>Name:
+      <input [(ngModel)]="course.name" placeholder="Course Name"/>
+    </label><br>
+    <label>Link:
+      <input [(ngModel)]="course.link" placeholder="Link"/>
+    </label><br>
+    <label>Course_duration:
+      <input [(ngModel)]="course.course_duration" placeholder="Course Duration"/>
+    </label><br>
+    <label>Price:
+      <input [(ngModel)]="course.price" placeholder="Price"/>
+    </label><br>
+  </div>
+  <button (click)="insertcourse()">SUBMIT</button>
+</div>

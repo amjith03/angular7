@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<title>Bootstrap Elegant Sign Up Form with Icons</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+</style>
+</head>
+<body>
+<div class="signup-form">
+    <form action="/examples/actions/confirmation.php" method="post">
+		<h2>UPDATE DETAILS</h2>
+        <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
+				<input type="name"  [(ngModel)]="course.name" class="form-control" name="name" placeholder="course_name" required="required">
+			</div>
+        </div>
+		    <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
+				<input type="link" [(ngModel)]="course.link" class="form-control" name="link" placeholder="course_link" required="required">
+			</div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
+              <input type="course_duration" [(ngModel)]="course.course_duration" class="form-control" name="course_duration" placeholder="course_duration" required="required">
+            </div>
+              </div>
+
+              <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
+                    <input type="price" [(ngModel)]="course.prices" class="form-control" name="price" placeholder="course_price" required="required">
+                  </div>
+                    </div>
+		<div class="form-group">
+        <button (click)="updateCourse()" class="btn btn-primary btn-block btn-lg" >UPDATE</button>
+
+    </div>
+		</form>
+
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+<div>
+    <h2>Product Edit</h2>
+    <div>
+      <label>Course name
+        <input [(ngModel)]="course.name" placeholder="Course Name"/>
+      </label><br>
+      <label>link
+        <input [(ngModel)]="course.link" placeholder="Course Link"/>
+      </label><br>
+      <label>duration
+        <input [(ngModel)]="course.course_duration" placeholder="Course duration"/>
+      </label><br>
+      <label>duration
+          <input [(ngModel)]="course.prices" placeholder="Course price"/>
+        </label><br>
+    </div>
+    <button (click)="updateCourse()">Update</button>
+  </div>
